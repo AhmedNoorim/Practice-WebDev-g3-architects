@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --primary-color: rgba(255, 144, 14, 0.10);
+    --btn-color: #FF900E;
+    --Dark-01: #131313;
+    --Dark-02: #424242;
+    --Dark-03: #727272;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* common styles */
+.btn-primary {
+    padding: 20px 25px;
+    border-radius: 8px;
+    border: 0;
+    background-color: var(--btn-color);
+    color: #FFF;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+/* header styles */
+header {
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+header nav {
+    max-width: 1440px;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px auto 100px;
+    padding-top: 50px;
+}
+
+header nav .segment1 {
+    color: var(--Dark-01);
+    font-family: Work Sans;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+}
+
+header nav ul a {
+    text-decoration: none;
+    color: var(--Dark-02);
+    font-family: Work Sans;
+    font-size: 1.15rem;
+    font-style: normal;
+    font-weight: 500;
+}
+
+header section h1 {
+    max-width: 1440px;
+    width: 75%;
+    margin: 0px auto;
+    color: var(--Dark-01);
+    font-family: Work Sans;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 700;
+}
+
+header section p {
+    margin: 30px auto;
+    max-width: 870px;
+    width: 75%;
+    color: var(--Dark-03);
+    font-family: Work Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+header img {
+    max-width: 1440px;
+    width: 75%;
+    margin: 50px auto;
+}
+
+/* mobile */
+@media screen and (max-width: 576px) {
+    header nav {
+        max-width: 576px;
+        width: 75%;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 20px;
+        align-items: center;
+        margin: 0px auto 25px;
+        padding-top: 25px;
+    }
+
+    header nav .segment1 {
+        font-size: 2.8rem;
+    }
+
+    header nav ul {
+        display: flex;
+        list-style: none;
+        gap: 1.5rem;
+    }
+
+    header nav ul a {
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 500;
+    }
+
+    header section h1 {
+        width: 85%;
+        font-size: 3rem;
+    }
+
+    header section p {
+        margin: 15px auto 25px;
+        width: 75%;
+    }
+
+    header img {
+        max-width: 576px;
+        width: 75%;
+        margin: 25px auto;
+    }
+}
+
+/* tablet and ipad */
+@media screen and (min-width: 577px) and (max-width:992px) {
+    header nav {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        margin: 0px auto 25px;
+        padding-top: 25px;
+    }
+
+    header nav .segment1 {
+        font-size: 3rem;
+    }
+
+    header nav ul {
+        display: flex;
+        list-style: none;
+        gap: 1.5rem;
+    }
+
+    header img {
+        margin: 25px auto;
+    }
+
+}
