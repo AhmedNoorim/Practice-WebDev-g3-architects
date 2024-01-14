@@ -95,15 +95,80 @@ header img {
     margin: 50px auto;
 }
 
+/* main styles */
+main .segment-1 {
+    max-width: 1440px;
+    width: 73%;
+    margin: 0px auto;
+    margin-top: 85px;
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    align-items: center;
+}
+
+main .segment-1 .left {
+    /* background-color: red; */
+    width: 150%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+main .segment-1 .left img {
+    border-radius: 8px;
+    width: 100%;
+}
+
+main .segment-1 .right {
+    /* background: pink; */
+    width: 100%;
+}
+
+main .segment-1 .right h1 {
+    color: var(--Dark-01);
+    font-family: Work Sans;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+}
+
+main .segment-1 .right h1 .first {
+    color: var(--Dark-03);
+    font-family: Work Sans;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 500;
+}
+
+main .segment-1 .right h1 .second {
+    color: var(--btn-color);
+    font-family: Work Sans;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+}
+
+main .segment-1 .right p {
+    color: var(--Dark-03);
+    font-family: Work Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+main .segment-1 .right input {}
+
+/* media query */
 /* mobile */
 @media screen and (max-width: 576px) {
     header nav {
         max-width: 576px;
-        width: 75%;
-        display: flex;
         flex-direction: column-reverse;
         gap: 20px;
-        align-items: center;
         margin: 0px auto 25px;
         padding-top: 25px;
     }
@@ -113,15 +178,11 @@ header img {
     }
 
     header nav ul {
-        display: flex;
-        list-style: none;
         gap: 1.5rem;
     }
 
     header nav ul a {
         font-size: 1rem;
-        font-style: normal;
-        font-weight: 500;
     }
 
     header section h1 {
@@ -131,24 +192,49 @@ header img {
 
     header section p {
         margin: 15px auto 25px;
-        width: 75%;
     }
 
     header img {
         max-width: 576px;
-        width: 75%;
         margin: 25px auto;
+    }
+
+    main .segment-1 {
+        max-width: 576px;
+        width: 73%;
+        margin-top: 25px;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    main .segment-1 .left {
+        width: 100%;
+    }
+
+    main .segment-1 .right h1 {
+        font-size: 1.5rem;
+    }
+
+    main .segment-1 .right h1 .first {
+        font-size: 1.5rem;
+    }
+
+    main .segment-1 .right h1 .second {
+        font-size: 2rem;
+    }
+
+    main .segment-1 .right p {
+        font-size: 1rem;
+        margin-top: 5px;
+        margin-bottom: 15px;
     }
 }
 
 /* tablet and ipad */
 @media screen and (min-width: 577px) and (max-width:992px) {
     header nav {
-        width: 75%;
-        display: flex;
         flex-direction: column;
         gap: 20px;
-        align-items: center;
         margin: 0px auto 25px;
         padding-top: 25px;
     }
@@ -158,13 +244,40 @@ header img {
     }
 
     header nav ul {
-        display: flex;
-        list-style: none;
         gap: 1.5rem;
     }
 
     header img {
         margin: 25px auto;
+    }
+
+    main .segment-1 {
+        width: 73%;
+        margin-top: 50px;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    main .segment-1 .left {
+        width: 100%;
+    }
+
+    main .segment-1 .right h1 {
+        font-size: 2rem;
+    }
+
+    main .segment-1 .right h1 .first {
+        font-size: 2rem;
+    }
+
+    main .segment-1 .right h1 .second {
+        font-size: 2.5rem;
+    }
+
+    main .segment-1 .right p {
+        font-size: 1rem;
+        margin-top: 5px;
+        margin-bottom: 15px;
     }
 
 }
