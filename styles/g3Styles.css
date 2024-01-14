@@ -339,6 +339,19 @@ main .segment-4 .container img:hover {
     width: 12%;
 }
 
+/* footer styles */
+footer {
+    max-width: 1440px;
+    width: 75%;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: var(--primary-color);
+    text-align: center;
+    font-size: 1.1rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
 /* media query */
 /* mobile */
 @media screen and (max-width: 576px) {
@@ -478,7 +491,7 @@ main .segment-4 .container img:hover {
 
     main .segment-4 {
         max-width: 576px;
-        height: 550px;
+        height: 500px;
     }
 
     main .segment-4 h1 {
@@ -490,7 +503,7 @@ main .segment-4 .container img:hover {
     }
 
     main .segment-4 .container {
-        margin-top: 0px;
+        margin-top: 35px;
         margin-bottom: 50px;
         display: flex;
         flex-direction: column;
@@ -509,6 +522,13 @@ main .segment-4 .container img:hover {
         -webkit-filter: grayscale(100%);
         filter: grayscale(0%);
         width: 55%;
+    }
+
+    footer {
+        max-width: 576px;
+        width: 60vw;
+        margin: 0px auto 50px;
+        padding: 20px;
     }
 }
 
@@ -632,5 +652,17 @@ main .segment-4 .container img:hover {
     main .segment-3 .container .card-square {
         width: 150px;
         height: 150px;
+    }
+
+    main .segment-4 {
+        max-width: 992px;
+        height: 250px;
+    }
+
+    footer {
+        max-width: 992px;
+        width: 75vw;
+        margin: 0px auto 50px;
+        padding: 20px;
     }
 }
