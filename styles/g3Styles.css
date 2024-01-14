@@ -542,11 +542,10 @@ main .segment-3 .container .card-square .description {
     }
 
     main .segment-3 .container {
-        width: 95%;
+        width: 400px;
         margin: 50px auto;
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
-
     }
 
     main .segment-3 .container .card-square {
