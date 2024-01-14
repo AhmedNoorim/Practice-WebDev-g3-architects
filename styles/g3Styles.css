@@ -230,6 +230,70 @@ main .segment-2 .right div div p {
     font-weight: 500;
 }
 
+main .segment-3 {
+    max-width: 1440px;
+    width: 75%;
+    margin: 0px auto;
+    margin-top: 100px;
+}
+
+main .segment-3>h1 {
+    color: var(--Dark-01);
+    font-size: 2.8rem;
+    font-style: normal;
+    font-weight: 700;
+}
+
+main .segment-3>p {
+    color: var(--Dark-03);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    max-width: 540px;
+    margin-top: 15px;
+}
+
+main .segment-3 .container {
+    max-width: 1340px;
+    width: 95%;
+    margin: 75px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+
+main .segment-3 .container .card-square {
+    width: 140px;
+    height: 140px;
+    border-radius: 8px;
+    border: 1px solid var(--btn-color);
+    padding: 20px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .segment-3 .container .card-square img {
+    width: 35%;
+}
+
+main .segment-3 .container .card-square .title {
+    color: var(--Dark-02);
+    font-size: 2.7rem;
+    font-style: normal;
+    font-weight: 600;
+}
+
+main .segment-3 .container .card-square .description {
+    color: var(--Dark-03);
+    font-size: .98rem;
+    font-style: normal;
+    font-weight: 600;
+}
+
 /* media query */
 /* mobile */
 @media screen and (max-width: 576px) {
@@ -302,7 +366,7 @@ main .segment-2 .right div div p {
         width: 75%;
         margin-top: 50px;
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     main .segment-2 .left h1 {
@@ -333,10 +397,41 @@ main .segment-2 .right div div p {
     main .segment-2 .right div div {
         margin: 0px auto;
         width: 65vw;
-        padding: 10px;
-        position: static;
+        padding: 20px 10px;
+        position: static relative;
+        left: 0;
+        top: -7.5rem;
+    }
+
+    main .segment-3 {
+        max-width: 576px;
+        width: 75%;
+        margin-top: 0px;
+    }
+
+    main .segment-3>h1 {
+        font-size: 2rem;
+    }
+
+    main .segment-3>p {
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+
+    main .segment-3 .container {
+        width: 100%;
+        margin: 50px auto;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        gap: 10px;
+    }
+
+    main .segment-3 .container .card-square {
+        width: 140px;
+        height: 140px;
     }
 }
+
 
 /* tablet and ipad */
 @media screen and (min-width: 577px) and (max-width:992px) {
@@ -426,9 +521,36 @@ main .segment-2 .right div div p {
     main .segment-2 .right div div {
         margin: 0px auto;
         width: 50%;
-        padding: 10px;
+        padding: 30px;
         position: static relative;
-        top: -4.5rem;
+        top: -5rem;
     }
 
+    main .segment-3 {
+        max-width: 992px;
+        width: 75%;
+        margin-top: 0px;
+    }
+
+    main .segment-3>h1 {
+        font-size: 2.5rem;
+    }
+
+    main .segment-3>p {
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+
+    main .segment-3 .container {
+        width: 95%;
+        margin: 50px auto;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+
+    }
+
+    main .segment-3 .container .card-square {
+        width: 150px;
+        height: 150px;
+    }
 }
