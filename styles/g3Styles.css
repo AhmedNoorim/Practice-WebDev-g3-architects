@@ -6,6 +6,7 @@
     --Dark-01: #131313;
     --Dark-02: #424242;
     --Dark-03: #727272;
+    font-family: Work Sans;
 }
 
 * {
@@ -21,7 +22,6 @@
     background-color: var(--btn-color);
     color: #FFF;
     text-align: center;
-    font-family: Work Sans;
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 600;
@@ -46,7 +46,6 @@ header nav {
 
 header nav .segment1 {
     color: var(--Dark-01);
-    font-family: Work Sans;
     font-size: 2.5rem;
     font-style: normal;
     font-weight: 700;
@@ -61,7 +60,6 @@ header nav ul {
 header nav ul a {
     text-decoration: none;
     color: var(--Dark-02);
-    font-family: Work Sans;
     font-size: 1.15rem;
     font-style: normal;
     font-weight: 500;
@@ -72,7 +70,6 @@ header section h1 {
     width: 75%;
     margin: 0px auto;
     color: var(--Dark-01);
-    font-family: Work Sans;
     font-size: 4rem;
     font-style: normal;
     font-weight: 700;
@@ -83,7 +80,6 @@ header section p {
     max-width: 870px;
     width: 75%;
     color: var(--Dark-03);
-    font-family: Work Sans;
     font-size: 1rem;
     font-style: normal;
     font-weight: 400;
@@ -108,7 +104,6 @@ main .segment-1 {
 }
 
 main .segment-1 .left {
-    /* background-color: red; */
     width: 150%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -121,13 +116,11 @@ main .segment-1 .left img {
 }
 
 main .segment-1 .right {
-    /* background: pink; */
     width: 100%;
 }
 
 main .segment-1 .right h1 {
     color: var(--Dark-01);
-    font-family: Work Sans;
     font-size: 2.5rem;
     font-style: normal;
     font-weight: 700;
@@ -135,7 +128,6 @@ main .segment-1 .right h1 {
 
 main .segment-1 .right h1 .first {
     color: var(--Dark-03);
-    font-family: Work Sans;
     font-size: 2.5rem;
     font-style: normal;
     font-weight: 500;
@@ -143,7 +135,6 @@ main .segment-1 .right h1 .first {
 
 main .segment-1 .right h1 .second {
     color: var(--btn-color);
-    font-family: Work Sans;
     font-size: 2.5rem;
     font-style: normal;
     font-weight: 700;
@@ -151,7 +142,6 @@ main .segment-1 .right h1 .second {
 
 main .segment-1 .right p {
     color: var(--Dark-03);
-    font-family: Work Sans;
     font-size: 1rem;
     font-style: normal;
     font-weight: 400;
@@ -160,7 +150,85 @@ main .segment-1 .right p {
     margin-bottom: 30px;
 }
 
-main .segment-1 .right input {}
+main .segment-2 {
+    max-width: 1440px;
+    width: 75%;
+    margin: 0px auto;
+    margin-top: 125px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+}
+
+main .segment-2 .left {
+    width: 90%;
+}
+
+main .segment-2 .left h1 {
+    color: var(--Dark-01);
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 10px;
+    border-left: 3px solid var(--btn-color);
+    padding-left: 10px;
+}
+
+main .segment-2 .left p {
+    color: var(--Dark-03);
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+main .segment-2 .left .card-title {
+    color: var(--Dark-01);
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+main .segment-2 .left .card {
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+main .segment-2 .right {
+    max-width: 710px;
+    width: 100%;
+    display: flex;
+}
+
+main .segment-2 .right div img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+main .segment-2 .right div div {
+    width: 342px;
+    padding: 30px;
+    position: relative;
+    left: -1rem;
+    top: -5rem;
+}
+
+main .segment-2 .right div div h1 {
+    color: #FFF;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+main .segment-2 .right div div p {
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
 
 /* media query */
 /* mobile */
@@ -228,6 +296,46 @@ main .segment-1 .right input {}
         margin-top: 5px;
         margin-bottom: 15px;
     }
+
+    main .segment-2 {
+        max-width: 576px;
+        width: 75%;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    main .segment-2 .left h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+        padding-left: 10px;
+    }
+
+    main .segment-2 .left .card-title {
+        font-size: 1.25rem;
+    }
+
+    main .segment-2 .left .card {
+        padding: 20px;
+    }
+
+    main .segment-2 .right {
+        width: 100%;
+    }
+
+    main .segment-2 .right div img {
+        max-width: 420px;
+        width: 75vw;
+        border-radius: 8px;
+    }
+
+    main .segment-2 .right div div {
+        margin: 0px auto;
+        width: 65vw;
+        padding: 10px;
+        position: static;
+    }
 }
 
 /* tablet and ipad */
@@ -278,6 +386,49 @@ main .segment-1 .right input {}
         font-size: 1rem;
         margin-top: 5px;
         margin-bottom: 15px;
+    }
+
+    main .segment-2 {
+        max-width: 990px;
+        width: 75%;
+        margin-top: 75px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    main .segment-2 .left h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+        padding-left: 10px;
+    }
+
+    main .segment-2 .left .card-title {
+        font-size: 1.25rem;
+    }
+
+    main .segment-2 .left .card {
+        padding: 20px;
+    }
+
+    main .segment-2 .right {
+        width: 100%;
+    }
+
+    main .segment-2 .right div img {
+        margin: 0px auto;
+        max-width: 990px;
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    main .segment-2 .right div div {
+        margin: 0px auto;
+        width: 50%;
+        padding: 10px;
+        position: static relative;
+        top: -4.5rem;
     }
 
 }
